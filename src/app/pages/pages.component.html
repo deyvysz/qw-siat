@@ -1,0 +1,33 @@
+<div class="vertical-layout">
+  <app-header></app-header>
+  <app-sidebar></app-sidebar>
+  <div class="content">
+    <div class="main">
+      <!--BREADCURMBS-->
+      <app-breadcrumbs></app-breadcrumbs>
+      <!--END BREADCRUMBS-->
+        <!--SISTEMA DE RUTAS-->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                  <router-outlet></router-outlet>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div class="footer">
+      <div class="footer-content">
+          <p class="mb-0">Copyright © 2022 Qaliwarma. All rights reserved.</p>
+          <span>
+              <a href="" class="text-gray me-3">Term &amp; Conditions</a>
+              <a href="" class="text-gray">Privacy &amp; Policy</a>
+          </span>
+      </div>
+    </div>
+    <!--ENDFOOTER-->
+  </div>
+</div>
+
