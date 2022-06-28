@@ -1,0 +1,17 @@
+<div class="input-group mb-3">
+  <button class="btn btn-outline-primary"
+    type="button"
+    (click)="cambiarValor(-5)">
+    -
+  </button>
+  <input type="number"
+    class="form-control"
+    placeholder=""
+    [(ngModel)] = "progreso"
+    aria-label="Example text with two button addons">
+  <button
+    class="btn btn-outline-secondary"
+    type="button"
+    (click)="cambiarValor(+5)"
+    >+</button>
+</div>
